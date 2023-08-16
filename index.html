@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>DazTab Lite Beta Version</title>
+  <title>DazTab Lite Version</title>
 </head>
 <body>
   <div id="background-container"></div>
@@ -20,7 +20,33 @@
     <button id="delete-button" class="button">
       <img src="image/delete.png" alt="Delete Background" class="button-icon">
     </button>
+    <button id="about-button" class="button">
+      <img src="image/about.png" alt="About" class="button-icon">
+    </button>
     <input type="file" id="image-upload" accept="image/*">
+  </div>
+  <div id="about-popup" class="popup">
+    <div class="popup-content">
+      <h2 class="about-title">About</h2>
+      <div class="about-subtitle">
+        <p><strong>Copyright Notice</strong></p>
+        <p>DazTab Lite © 2023 <a href="https://zigaow.com" target="_blank">Zigao Wang</a>. All rights reserved.</p>
+        <p>For more information, please <a href="https://zigaow.com/copyright.html" target="_blank">click here</a>.</p>
+      </div>
+      <div class="about-subtitle">
+        <p><strong>Privacy Policy</strong></p>
+        <p>For more information about Privacy Policy of DazTab Lite, please <a href="https://zigaow.com/privacy.html" target="_blank">click here</a>.</p>
+      </div>
+      <div class="about-subtitle">
+        <p><strong>Github Repo</strong></p>
+        <p><a href="https://github.com/ZigaoWang/daztab-lite" target="_blank">Click Here</a></p>
+      </div>
+      <div class="about-subtitle">
+        <p><strong>License</strong></p>
+        <p><a href="https://github.com/ZigaoWang/daztab-lite/blob/main/LICENSE" target="_blank">Click Here</a></p>
+      </div>
+      <button id="about-close" class="popup-close-button">Close</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

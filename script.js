@@ -81,8 +81,9 @@ imageUpload.addEventListener('change', (event) => {
     reader.onload = (e) => {
       const imageUrl = e.target.result;
       backgroundContainer.style.backgroundImage = `url('${imageUrl}')`;
-      
-      localStorage.setItem('backgroundImage', imageUrl);
+
+      // Store background image in localStorage
+      localStorage.setItem('backgroundImage', JSON.stringify(imageUrl));
     };
     reader.readAsDataURL(file);
   }
@@ -98,16 +99,40 @@ deleteButton.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const cachedBackgroundImage = localStorage.getItem('backgroundImage');
+  const cachedBackgroundImage = JSON.parse(localStorage.getItem('backgroundImage'));
   if (cachedBackgroundImage) {
     backgroundContainer.style.backgroundImage = `url('${cachedBackgroundImage}')`;
   } else {
     backgroundContainer.style.backgroundImage = 'url(https://bing.shangzhenyang.com/api/1080p)';
   }
-  
+
   updateClock();
   setInterval(updateClock, 1000);
 
   updateDate();
-  updateQuote(); // Call the function to set the initial quote
+  updateQuote();
+});
+
+const aboutButton = document.getElementById('about-button');
+const aboutPopup = document.getElementById('about-popup');
+const aboutClose = document.getElementById('about-close');
+
+aboutButton.addEventListener('click', () => {
+  aboutPopup.style.display = 'flex';
+});
+
+aboutClose.addEventListener('click', () => {
+  aboutPopup.style.display = 'none';
+});
+aboutButton.addEventListener('click', () => {
+  aboutPopup.classList.add('fade-in');
+  aboutPopup.style.display = 'flex';
+});
+
+aboutClose.addEventListener('click', () => {
+  aboutPopup.classList.add('fade-out');
+  setTimeout(() => {
+    aboutPopup.classList.remove('fade-out');
+    aboutPopup.style.display = 'none';
+  }, 300); // 300ms matches the duration of the fade-out animation
 });

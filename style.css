@@ -8,7 +8,7 @@ body {
   justify-content: center;
   height: 100vh;
   flex-direction: column; /* Align elements in a column */
-  font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
+  font-family: 'SF Pro', 'Quicksand', 'Roboto', sans-serif;
 }
 
 #background-container {
@@ -47,8 +47,18 @@ body {
   color: white;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   z-index: 1;
-  margin-top: 20px; /* Add margin to the top */
+  margin-top: -30px; /* Add margin to the top */
   text-align: center; /* Center the text horizontally */
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+}
+
+#clock:hover {
+  font-size: 10.5rem;
+}
+
+#clock:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #date {

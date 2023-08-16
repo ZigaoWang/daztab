@@ -1,11 +1,11 @@
 {
-  "name":"DazTab Lite Beta Version",
+  "name":"DazTab Lite Version",
   "description":"Start Page Extension",
   "manifest_version":3,
   "version":"1.0",
   "author": "Zigao Wang",
-  "homepage_url": "https://zigaow.com",
+  "homepage_url": "https://github.com/ZigaoWang/daztab-lite/",
 
   "chrome_url_overrides":{
        "newtab":"index.html"}
-  }
+  

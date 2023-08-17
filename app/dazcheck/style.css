@@ -1,0 +1,159 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  max-width: calc(100vw - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 22px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button#addTaskButton {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.task-list-container {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li.done {
+  background-color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+li span {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+li input[type="text"] {
+  display: none;
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+li.edit-mode span {
+  display: none;
+}
+
+li.edit-mode input[type="text"] {
+  display: block;
+}
+
+li button {
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #bbb;
+}
+
+button#clearTasksButton {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button#printTasksButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

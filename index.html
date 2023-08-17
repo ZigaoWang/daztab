@@ -9,9 +9,9 @@
 <body>
   <div id="background-container"></div>
   <div id="content-container">
-    <div id="clock"></div>
     <div id="date"></div>
-    <div id="quote"></div>
+    <div id="clock"></div>
+    <div id="greet"></div>
   </div>
   <div id="upload-container">
     <button id="upload-button" class="button">
@@ -23,6 +23,9 @@
     <button id="about-button" class="button">
       <img src="image/about.png" alt="About" class="button-icon">
     </button>
+    <button id="dazcheck-button" class="button">
+      <img src="image/dazcheck.png" alt="DazCheck" class="button-icon">
+    </button>    
     <input type="file" id="image-upload" accept="image/*">
   </div>
   <div id="about-popup" class="popup">
@@ -48,6 +51,15 @@
       <button id="about-close" class="popup-close-button">Close</button>
     </div>
   </div>
+  <div id="dazcheck-popup" class="popup">
+    <div class="popup-content">
+      <button id="dazcheck-close" class="popup-close">×</button>
+      <h2 class="about-title">DazCheck</h2>
+      <iframe id="dazcheck-iframe" src="app/dazcheck/index.html" frameborder="0"></iframe>
+      <button class="popup-close-button">Close</button>
+    </div>
+  </div>
+  <div id="quote"></div>
   <script src="script.js"></script>
 </body>
 </html>

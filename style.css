@@ -89,12 +89,13 @@ body {
   text-align: center; /* Center the text horizontally */
 }
 
-#upload-container {
+#button-container {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 42px;
   display: flex;
   z-index: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 #image-upload {
@@ -102,13 +103,13 @@ body {
 }
 
 .button {
-  background-color: #3498db;
+  background-color: #ffffff;
   color: white;
   border: none;
-  border-radius: 3px;
+  border-radius: 100%;
   cursor: pointer;
   padding: 2px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
   margin-right: 5px;
   width: 25px;
   height: 25px;
@@ -118,7 +119,11 @@ body {
 }
 
 .button:hover {
-  background-color: #2980b9;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .button-icon {
@@ -224,6 +229,11 @@ body {
 }
 
 #dazcheck-iframe {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+}
+
+#dazcalc-iframe {
+  width: 400px;
+  height: 600px;
 }

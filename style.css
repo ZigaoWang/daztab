@@ -9,6 +9,13 @@ body {
   height: 100vh;
   flex-direction: column; /* Align elements in a column */
   font-family: 'SF Pro', 'Quicksand', 'Roboto', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
 }
 
 #background-container {
@@ -32,6 +39,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  animation: fadeIn 1s ease-in-out;
 }
 
 #content-container {
@@ -41,43 +49,43 @@ body {
   justify-content: center;
 }
 
+#date {
+  position: relative;
+  font-size: 1.6rem; /* Adjust font size for the date */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  z-index: 1;
+  margin-top: -380px;
+  margin-bottom: -15px;
+  text-align: center; /* Center the text horizontally */
+}
+
 #clock {
   position: relative;
-  font-size: 10rem;
+  font-size: 7.5rem;
   color: white;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   z-index: 1;
-  margin-top: -30px; /* Add margin to the top */
   text-align: center; /* Center the text horizontally */
   font-weight: 500;
   transition: all ease-in-out 0.3s;
 }
 
 #clock:hover {
-  font-size: 10.5rem;
+  font-size: 8rem;
 }
 
 #clock:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
-#date {
+#greet {
   position: relative;
-  font-size: 1.5rem; /* Adjust font size for the date */
+  font-size: 2.5rem;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
   z-index: 1;
-  margin-top: 5px; /* Add a bit of margin between clock and date */
-  text-align: center; /* Center the text horizontally */
-}
-
-#quote {
-  position: relative;
-  font-size: 2rem; /* Adjust font size for the quote */
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
-  z-index: 1;
-  margin-top: 10px; /* Add a bit of margin between date and quote */
+  margin-top: -10px;
   text-align: center; /* Center the text horizontally */
 }
 
@@ -130,6 +138,10 @@ body {
   justify-content: center;
   z-index: 2;
   animation: fadeIn 0.3s ease-in-out; /* Add fade-in animation */
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -188,4 +200,30 @@ body {
 
 .popup-close-button:hover {
   background-color: #c0392b;
+}
+
+#quote {
+  position: fixed;
+  bottom: 10px;
+  font-size: 1.5rem; /* Adjust font size for the quote */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  z-index: 1;
+  text-align: center; /* Center the text horizontally */
+  transition: all ease-in-out 0.3s;
+}
+
+#quote:hover {
+  font-size: 1.6rem;
+}
+
+#iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#dazcheck-iframe {
+  width: 100px;
+  height: 100px;
 }

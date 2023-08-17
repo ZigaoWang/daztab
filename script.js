@@ -294,42 +294,39 @@ const aboutButton = document.getElementById('about-button');
 const aboutPopup = document.getElementById('about-popup');
 const aboutClose = document.getElementById('about-close');
 
-aboutButton.addEventListener('click', () => {
-  aboutPopup.style.display = 'flex';
-});
-
 aboutClose.addEventListener('click', () => {
   aboutPopup.style.display = 'none';
 });
-aboutButton.addEventListener('click', () => {
-  aboutPopup.classList.add('fade-in');
-  aboutPopup.style.display = 'flex';
-});
 
-aboutClose.addEventListener('click', () => {
-  aboutPopup.classList.add('fade-out');
-  setTimeout(() => {
-    aboutPopup.classList.remove('fade-out');
-    aboutPopup.style.display = 'none';
-  }, 300); // 300ms matches the duration of the fade-out animation
+aboutButton.addEventListener('click', () => {
+  aboutPopup.classList.add('fadeIn');
+  aboutPopup.style.display = 'flex';
 });
 
 const dazcheckButton = document.getElementById('dazcheck-button');
 const dazcheckPopup = document.getElementById('dazcheck-popup');
 const dazcheckClose = document.getElementById('dazcheck-close');
-const dazcheckIframe = document.getElementById('dazcheck-iframe');
 
 dazcheckButton.addEventListener('click', () => {
-  dazcheckPopup.classList.add('fade-in');
+  dazcheckPopup.classList.add('fadeIn');
   dazcheckPopup.style.display = 'flex';
 });
 
 dazcheckClose.addEventListener('click', () => {
-  dazcheckPopup.classList.add('fade-out');
-  setTimeout(() => {
-    dazcheckPopup.classList.remove('fade-out');
-    dazcheckPopup.style.display = 'none';
-  }, 300); // 300ms matches the duration of the fade-out animation
+  dazcheckPopup.style.display = 'none';
+});
+
+const dazcalcButton = document.getElementById('dazcalc-button');
+const dazcalcPopup = document.getElementById('dazcalc-popup');
+const dazcalcClose = document.getElementById('dazcalc-close');
+
+dazcalcButton.addEventListener('click', () => {
+  dazcalcPopup.classList.add('fadeIn');
+  dazcalcPopup.style.display = 'flex';
+});
+
+dazcalcClose.addEventListener('click', () => {
+  dazcalcPopup.style.display = 'none';
 });
 
 var myDate = new Date();

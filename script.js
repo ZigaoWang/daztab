@@ -217,7 +217,7 @@ function updateClock() {
 
 function updateDate() {
   const now = new Date();
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const options = { weekday: 'long', month: 'long', day: 'numeric' };
   const dateText = now.toLocaleDateString('en-US', options);
   document.getElementById('date').textContent = dateText;
 }
@@ -226,6 +226,25 @@ function updateQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   document.getElementById('quote').textContent = quotes[randomIndex];
 }
+
+const quoteElement = document.getElementById('quote');
+
+// Function to update the quote with a fade animation
+function updateQuoteWithAnimation() {
+  quoteElement.classList.remove('fade-in');
+  void quoteElement.offsetWidth; // Trigger reflow to restart animation
+  quoteElement.classList.add('fade-in');
+  updateQuote();
+}
+
+// Refresh the quote when clicked with fade animation
+quoteElement.addEventListener('click', updateQuoteWithAnimation);
+
+// Refresh the quote when clicked with fade transition
+quoteElement.addEventListener('click', () => {
+  fadeOutQuote();
+  setTimeout(fadeInQuote, 300); // Add a delay to match the fade-out transition duration
+});
 
 const imageUpload = document.getElementById('image-upload');
 const backgroundContainer = document.getElementById('background-container');
@@ -294,3 +313,36 @@ aboutClose.addEventListener('click', () => {
     aboutPopup.style.display = 'none';
   }, 300); // 300ms matches the duration of the fade-out animation
 });
+
+const dazcheckButton = document.getElementById('dazcheck-button');
+const dazcheckPopup = document.getElementById('dazcheck-popup');
+const dazcheckClose = document.getElementById('dazcheck-close');
+const dazcheckIframe = document.getElementById('dazcheck-iframe');
+
+dazcheckButton.addEventListener('click', () => {
+  dazcheckPopup.classList.add('fade-in');
+  dazcheckPopup.style.display = 'flex';
+});
+
+dazcheckClose.addEventListener('click', () => {
+  dazcheckPopup.classList.add('fade-out');
+  setTimeout(() => {
+    dazcheckPopup.classList.remove('fade-out');
+    dazcheckPopup.style.display = 'none';
+  }, 300); // 300ms matches the duration of the fade-out animation
+});
+
+var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs < 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('greet').innerHTML =
+        '<div>' + greet + '</div>';

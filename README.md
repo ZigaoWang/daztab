@@ -1,4 +1,6 @@
-# DazTab Lite Version
+# DazTab Lite
+
+## URL: https://lite.daztab.com
 
 ## Introduction
 

@@ -6,6 +6,10 @@
 
 DazTab Lite is a minimalist style new tab start page for browsers.
 
+## Install
+
+You can simple install DazTab Lite via [Chrome Web Store](https://chrome.google.com/webstore/detail/daztab-lite/bagdffmnpgghcehadgmhcppaphpdfmbb).
+
 ## License
 
 DazTab Lite is released under the Apache 2.0 License. Please see the [LICENSE](/LICENSE) file for more information.

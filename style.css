@@ -42,7 +42,7 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-#content-container {
+#top-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,17 +52,17 @@ body {
 
 #date {
   position: relative;
-  font-size: 1.6rem; /* Adjust font size for the date */
+  font-size: 3.5vh; /* Adjust font size for the date */
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
   z-index: 1;
-  margin-bottom: -15px;
+  margin-bottom: -2vh;
   text-align: center; /* Center the text horizontally */
 }
 
 #clock {
   position: relative;
-  font-size: 7.5rem;
+  font-size: 15vh;
   color: white;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -72,7 +72,7 @@ body {
 }
 
 #clock:hover {
-  font-size: 8rem;
+  font-size: 16vh;
 }
 
 #clock:active {
@@ -81,21 +81,40 @@ body {
 
 #greet {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 5vh;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
   z-index: 1;
-  margin-top: -10px;
+  margin-top: -2vh;
   text-align: center; /* Center the text horizontally */
 }
 
-#button-container {
+#bottom-container {
+  bottom: 2.5vh;
   position: absolute;
-  bottom: 42px;
   display: flex;
   z-index: 1;
   align-items: center;
   justify-content: center;
+}
+
+#button-container {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8.5vh;
+}
+
+#quote {
+  position: relative;
+  font-size: 3vh; /* Adjust font size for the quote */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  z-index: 1;
+  text-align: center; /* Center the text horizontally */
+  transition: all ease-in-out 0.3s;
 }
 
 #image-upload {
@@ -105,14 +124,15 @@ body {
 .button {
   background-color: #ffffff;
   color: white;
+  position: relative;
   border: none;
   border-radius: 100%;
   cursor: pointer;
   padding: 2px;
   transition: background-color 0.3s ease-in-out;
-  margin-right: 5px;
-  width: 25px;
-  height: 25px;
+  margin-right: 0.8vh;
+  width: 4vh;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,17 +225,6 @@ body {
 
 .popup-close-button:hover {
   background-color: #c0392b;
-}
-
-#quote {
-  position: fixed;
-  bottom: 10px;
-  font-size: 1.5rem; /* Adjust font size for the quote */
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
-  z-index: 1;
-  text-align: center; /* Center the text horizontally */
-  transition: all ease-in-out 0.3s;
 }
 
 #quote:hover {

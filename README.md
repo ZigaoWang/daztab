@@ -1,7 +1,6 @@
 # DazTab Lite
 
-# URL: https://lite.daztab.com
-# [Chrome Web Store](https://chrome.google.com/webstore/detail/daztab-lite/bagdffmnpgghcehadgmhcppaphpdfmbb)
+## URL: https://lite.daztab.com
 
 ## Introduction
 

@@ -1,7 +1,5 @@
 # DazTab Lite
 
-## URL: https://lite.daztab.com
-
 ## Introduction
 
 DazTab Lite is a minimalist style new tab start page for browsers.

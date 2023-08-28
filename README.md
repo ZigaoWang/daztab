@@ -12,7 +12,7 @@ You can simple install DazTab Lite via [Chrome Web Store](https://chrome.google.
 
 ## License
 
-DazTab Lite is released under the Apache 2.0 License. Please see the [LICENSE](/LICENSE) file for more information.
+DazTab Lite is released under the MIT License. Please see the [LICENSE](/LICENSE) file for more information.
 
 ## Privacy Policy
 

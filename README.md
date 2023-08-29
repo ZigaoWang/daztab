@@ -1,4 +1,11 @@
 # DazTab Lite
+![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Flite.daztab.com)
+![GitHub](https://img.shields.io/github/license/ZigaoWang/daztab-lite)
+![GitHub repo size](https://img.shields.io/github/repo-size/ZigaoWang/daztab-lite)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ZigaoWang/daztab-lite)
+![GitHub last commit](https://img.shields.io/github/last-commit/ZigaoWang/daztab-lite)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/ZigaoWang/daztab-lite)
+
 <img src="logo/128.png" ></img>
 
 ## Introduction

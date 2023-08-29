@@ -2,7 +2,7 @@
 
 ## Introduction
 
-DazTab Lite is a minimalist style new tab start page for browsers.
+DazTab Lite is a chrome extension that replaces your new tab page into a macOS-styled dashboard.
 
 ## Install
 

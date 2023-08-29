@@ -1,8 +1,16 @@
 # DazTab Lite
+<img src="logo/128.png" ></img>
 
 ## Introduction
 
 DazTab Lite is a chrome extension that replaces your new tab page into a macOS-styled dashboard.
+
+## Preview
+> [!NOTE]
+> The following pictures are for preview purposes only, please refer to the [actual version](https://lite.daztab.com/).
+
+![Image](https://github.com/ZigaoWang/daztab-lite/assets/102006756/39587890-595d-448c-856b-067706b930ae)
+![Image](https://github.com/ZigaoWang/daztab-lite/assets/102006756/916d9690-6758-41b3-abd6-468a7c038714)
 
 ## Install
 

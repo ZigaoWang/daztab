@@ -6,7 +6,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ZigaoWang/daztab-lite)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/ZigaoWang/daztab-lite)
 
-<img src="https://lite.daztab.com/logo/128.png" ></img>
+<img src="https://lite.daztab.com/logo/128.png" >
 
 ## Introduction
 

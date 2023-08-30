@@ -52,21 +52,21 @@ body {
 
 #date {
   position: relative;
-  font-size: 3.5vh; /* Adjust font size for the date */
+  font-size: 3.5vh;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
   z-index: 1;
   margin-bottom: -2vh;
-  text-align: center; /* Center the text horizontally */
+  text-align: center;
 }
 
 #clock {
   position: relative;
   font-size: 15vh;
   color: white;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
   z-index: 1;
-  text-align: center; /* Center the text horizontally */
+  text-align: center;
   font-weight: 500;
   transition: all ease-in-out 0.3s;
 }
@@ -83,10 +83,10 @@ body {
   position: relative;
   font-size: 5vh;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
   z-index: 1;
   margin-top: -2vh;
-  text-align: center; /* Center the text horizontally */
+  text-align: center;
 }
 
 #bottom-container {
@@ -176,7 +176,7 @@ body {
 
 .popup-content {
   background-color: white;
-  padding: 20px;
+  padding: 2vh;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: left;
@@ -192,19 +192,19 @@ body {
 }
 
 .about-title {
-  font-size: 2.5rem;
+  font-size: 6vh;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 1vh;
   margin-top: 0px;
 }
 
 .about-subtitle {
-  font-size: 1rem;
+  font-size: 2vh;
   margin-bottom: 20px;
 }
 
 .about-subtitle strong {
-  font-size: 1.3rem;
+  font-size: 3vh;
   display: block;
 }
 
@@ -215,10 +215,12 @@ body {
 
 .popup-close-button {
   background-color: #e74c3c;
+  text-align: center;
   border: none;
   color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-size: 3vh;
+  padding: 1.2vh 2.4vh;
+  border-radius: 5%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -238,11 +240,11 @@ body {
 }
 
 #dazcheck-iframe {
-  width: 500px;
-  height: 500px;
+  width: 50vh;
+  height: 60vh;
 }
 
 #dazcalc-iframe {
-  width: 400px;
-  height: 600px;
+  width: 50vh;
+  height: 60vh;
 }

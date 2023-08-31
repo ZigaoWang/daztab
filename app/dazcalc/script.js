@@ -1,68 +1,60 @@
-let result = '';
-let history = '';
+let displayValue = '0';
+let darkMode = false;
 
-function updateResult(displayResult) {
-  const resultElement = document.getElementById('result');
-  resultElement.value = displayResult;
+function updateDisplay() {
+  document.getElementById('display').textContent = displayValue;
 }
 
-function updateHistory(displayHistory) {
-  const historyElement = document.getElementById('history');
-  historyElement.innerText = displayHistory;
-}
-
-function appendInput(input) {
-  if (result === '0' && input !== '.') {
-    result = '';
+function appendToDisplay(value) {
+  if (displayValue === '0' && value !== '.') {
+    displayValue = value;
+  } else {
+    displayValue += value;
   }
-  result += input;
-  updateResult(result);
+  updateDisplay();
 }
 
-function clearResult() {
-  result = '';
-  updateResult('0');
+function clearDisplay() {
+  displayValue = '0';
+  updateDisplay();
 }
 
-function calculateResult() {
-  if (result === '') {
-    return;
-  }
-
-  const previousResult = result;
+function calculate() {
   try {
-    result = eval(result);
-    updateResult(result);
-    history = previousResult + ' = ' + result;
-    updateHistory(history);
+    const result = eval(displayValue);
+    displayValue = parseFloat(result.toFixed(10)).toString();
+    updateDisplay();
   } catch (error) {
-    result = 'Error';
-    updateResult(result);
+    displayValue = 'Error';
+    updateDisplay();
   }
 }
 
-document.addEventListener('keydown', function (event) {
-  const key = event.key;
-
-  if (key === 'Enter') {
-    calculateResult();
-  } else if (key === 'Escape') {
-    clearResult();
-  } else if (key === 'Backspace') {
-    clearResult();
-    history = '';
-    updateHistory(history);
-  } else if (key === '+') {
-    appendInput('+');
-  } else if (key === '-') {
-    appendInput('-');
-  } else if (key === '*') {
-    appendInput('*');
-  } else if (key === '/') {
-    appendInput('/');
-  } else if (key === '.') {
-    appendInput('.');
-  } else if (key >= '0' && key <= '9') {
-    appendInput(key);
+function toggleDarkMode() {
+  darkMode = !darkMode;
+  if (darkMode) {
+    enableDarkMode();
+  } else {
+    enableLightMode();
   }
-});
+}
+
+function enableDarkMode() {
+  document.body.style.setProperty('--bg-color', '#222');
+  document.body.style.setProperty('--calc-bg-color', '#333');
+  document.body.style.setProperty('--display-bg-color', '#444');
+  document.body.style.setProperty('--btn-bg-color', '#555');
+  document.body.style.setProperty('--btn-hover-bg-color', '#666');
+  document.body.style.setProperty('--btn-text-color', '#fff');
+  document.body.style.setProperty('--symbol-color', '#0080ff');
+}
+
+function enableLightMode() {
+  document.body.style.setProperty('--bg-color', '#fff');
+  document.body.style.setProperty('--calc-bg-color', '#fff');
+  document.body.style.setProperty('--display-bg-color', '#e0e0e0');
+  document.body.style.setProperty('--btn-bg-color', '#e0e0e0');
+  document.body.style.setProperty('--btn-hover-bg-color', '#ccc');
+  document.body.style.setProperty('--btn-text-color', '#000');
+  document.body.style.setProperty('--symbol-color', '#0080ff');
+}

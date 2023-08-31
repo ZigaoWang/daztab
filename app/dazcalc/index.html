@@ -1,46 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DazCalc</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="result" readonly>
-        <div id="history"></div>
-        <table>
-            <tr>
-                <td><button class="clear" onclick="clearResult()">C</button></td>
-                <td><button onclick="changeSign()">+/-</button></td>
-                <td><button onclick="calculatePercentage()">%</button></td>
-                <td><button class="operator" onclick="appendInput('/')">/</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="appendInput('7')">7</button></td>
-                <td><button onclick="appendInput('8')">8</button></td>
-                <td><button onclick="appendInput('9')">9</button></td>
-                <td><button class="operator" onclick="appendInput('*')">x</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="appendInput('4')">4</button></td>
-                <td><button onclick="appendInput('5')">5</button></td>
-                <td><button onclick="appendInput('6')">6</button></td>
-                <td><button class="operator" onclick="appendInput('-')">-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="appendInput('1')">1</button></td>
-                <td><button onclick="appendInput('2')">2</button></td>
-                <td><button onclick="appendInput('3')">3</button></td>
-                <td><button class="operator" onclick="appendInput('+')">+</button></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button class="button-zero" onclick="appendInput('0')">0</button></td>
-                <td><button onclick="appendInput('.')">.</button></td>
-                <td><button class="equal" onclick="calculateResult()">=</button></td>
-            </tr>
-        </table>
-    </div>
-    
-    <script src="script.js"></script>
+<div id="calculator">
+  <div id="display">0</div>
+  <div class="s-btn-container">
+    <button class="s-btn" id="symbol" onclick="toggleDarkMode()">L/D</button>
+    <button class="s-btn" id="symbol" onclick="clearDisplay()">Clear</button>
+  </div>
+  <div class="btn-container">
+    <button class="btn" onclick="appendToDisplay('7')">7</button>
+    <button class="btn" onclick="appendToDisplay('8')">8</button>
+    <button class="btn" onclick="appendToDisplay('9')">9</button>
+    <button class="btn" id="symbol" onclick="appendToDisplay('+')">+</button>
+    <button class="btn" onclick="appendToDisplay('4')">4</button>
+    <button class="btn" onclick="appendToDisplay('5')">5</button>
+    <button class="btn" onclick="appendToDisplay('6')">6</button>
+    <button class="btn" id="symbol" onclick="appendToDisplay('-')">-</button>
+    <button class="btn" onclick="appendToDisplay('1')">1</button>
+    <button class="btn" onclick="appendToDisplay('2')">2</button>
+    <button class="btn" onclick="appendToDisplay('3')">3</button>
+    <button class="btn" id="symbol" onclick="appendToDisplay('×')">×</button>
+    <button class="btn" onclick="appendToDisplay('0')">0</button>
+    <button class="btn" onclick="appendToDisplay('.')">.</button>
+    <button class="btn" id="symbol" onclick="calculate()">=</button>
+    <button class="btn" id="symbol" onclick="appendToDisplay('/')">÷</button>
+  </div>
+</div>
 </body>
 </html>

@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  overflow: hidden;
   position: relative;
   background-image: url(https://bing.shangzhenyang.com/api/1080p);
   display: flex;

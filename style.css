@@ -247,3 +247,8 @@ body {
   width: 50vh;
   height: 60vh;
 }
+
+#notes-iframe {
+  width: 80vh;
+  height: 60vh;
+}

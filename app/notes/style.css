@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  width: 98vw;
+  height: 98vh;
+  margin: 1vh;
+  border: none;
+  resize: none;
+  font-size: 5vh;
+  background: transparent;
+  color: black;
+  outline: none;
+}

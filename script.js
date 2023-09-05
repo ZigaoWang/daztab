@@ -179,7 +179,47 @@ const quotes = [
   "Stay inspired, stay motivated.",
   "Be your own kind of beautiful.",
   "Believe in the magic within you.",
-  "You got this!"
+  "You got this!",
+  "Keep pushing forward.",
+  "Believe in yourself.",
+  "Stay positive, be kind.",
+  "Dream big. Work hard.",
+  "Make it happen.",
+  "Stay focused, stay humble.",
+  "Take chances, be brave.",
+  "Choose joy, be happy.",
+  "You're stronger than you know.",
+  "Be fearless, be free.",
+  "Live, love, laugh.",
+  "Follow your heart.",
+  "Keep growing, keep glowing.",
+  "Inspire and be inspired.",
+  "Make every moment count.",
+  "Spread positivity.",
+  "Find beauty in the little things.",
+  "Make today amazing.",
+  "Life is what you make it.",
+  "Choose happiness.",
+  "Live more, worry less.",
+  "Be present.",
+  "Keep your chin up.",
+  "Adventure awaits.",
+  "Stay humble, hustle hard.",
+  "Take a deep breath, keep going.",
+  "Dream big, work smart.",
+  "Stay strong, keep fighting.",
+  "Stay grateful, stay positive.",
+  "Life is a gift, cherish it.",
+  "Keep moving, keep growing.",
+  "Find joy in the journey.",
+  "Keep calm and carry on.",
+  "Rise above the storm.",
+  "You are enough.",
+  "Every day is a new beginning.",
+  "Live fully, love deeply.",
+  "Stay inspired, stay motivated.",
+  "Be your own kind of beautiful.",
+  "Believe in the magic within you."
 ];
 
 function updateClock() {
@@ -301,6 +341,19 @@ dazcalcButton.addEventListener('click', () => {
 
 dazcalcClose.addEventListener('click', () => {
   dazcalcPopup.style.display = 'none';
+});
+
+const notesButton = document.getElementById('notes-button');
+const notesPopup = document.getElementById('notes-popup');
+const notesClose = document.getElementById('notes-close');
+
+notesButton.addEventListener('click', () => {
+  notesPopup.classList.add('fadeIn');
+  notesPopup.style.display = 'flex';
+});
+
+notesClose.addEventListener('click', () => {
+  notesPopup.style.display = 'none';
 });
 
 var myDate = new Date();

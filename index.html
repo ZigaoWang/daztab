@@ -40,7 +40,10 @@
       </button>
       <button id="dazcalc-button" class="button">
         <img src="image/dazcalc.png" alt="DazCalc" class="button-icon">
-      </button>   
+      </button>
+      <button id="notes-button" class="button">
+        <img src="image/notes.png" alt="Notes" class="button-icon">
+      </button>
       <input type="file" id="image-upload" accept="image/*">
     </div>
     <div id="quote"></div>
@@ -78,6 +81,12 @@
     <div class="popup-content">
       <button id="dazcalc-close" class="popup-close-button">&#x2715</button>
       <iframe id="dazcalc-iframe" src="app/dazcalc/index.html" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div id="notes-popup" class="popup">
+    <div class="popup-content">
+      <button id="notes-close" class="popup-close-button">&#x2715</button>
+      <iframe id="notes-iframe" src="app/notes/index.html" frameborder="0"></iframe>
     </div>
   </div>
   <script src="script.js"></script>

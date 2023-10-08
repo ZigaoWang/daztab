@@ -1,4 +1,4 @@
-# DazTab Lite
+# DazTab
 ![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fdaztab.com)
 ![GitHub](https://img.shields.io/github/license/ZigaoWang/daztab)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ZigaoWang/daztab)
@@ -8,12 +8,9 @@
 
 <img src="https://daztab.com/logo/128.png" >
 
-> [!IMPORTANT]
-> "DazTab Lite" is now named "DazTab". This will be changed in the next update.
-
 ## Introduction
 
-DazTab Lite is a chrome extension that replaces your new tab page into a macOS-styled dashboard.
+DazTab is a chrome extension that replaces your new tab page into a macOS-styled dashboard.
 
 ## Preview
 > [!NOTE]
@@ -24,12 +21,12 @@ DazTab Lite is a chrome extension that replaces your new tab page into a macOS-s
 
 ## Install
 
-You can simple install DazTab Lite via [Chrome Web Store](https://chrome.google.com/webstore/detail/daztab-lite/bagdffmnpgghcehadgmhcppaphpdfmbb).
+You can simple install DazTab via [Chrome Web Store](https://chrome.google.com/webstore/detail/daztab-lite/bagdffmnpgghcehadgmhcppaphpdfmbb).
 
 ## License
 
-DazTab Lite is released under the MIT License. Please see the [LICENSE](/LICENSE) file for more information.
+DazTab is released under the MIT License. Please see the [LICENSE](/LICENSE) file for more information.
 
 ## Privacy Policy
 
-DazTab Lite do not collect any personal information, and we do not use cookies. For more information, please click [here](https://old.daztab.com/privacy.html) to see the privacy policy.
+DazTab do not collect any personal information, and we do not use cookies. For more information, please click [here](https://old.daztab.com/privacy.html) to see the privacy policy.

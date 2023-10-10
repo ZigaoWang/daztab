@@ -252,3 +252,44 @@ body {
   width: 80vh;
   height: 60vh;
 }
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+/* Style table headers */
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style the first row (top row) */
+tr:first-child {
+  background-color: #f2f2f2;
+}
+
+/* Style table rows other than the first row */
+tr:not(:first-child) {
+  background-color: #fff;
+}
+
+/* Style table cells */
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Style links in the table */
+td a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+td a:hover {
+  text-decoration: underline;
+}

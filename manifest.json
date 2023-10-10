@@ -2,7 +2,7 @@
   "name":"DazTab",
   "description":"The perfect start page extension for browsers",
   "manifest_version":3,
-  "version":"0.2.9",
+  "version":"0.2.10",
   "author": "Zigao Wang",
   "homepage_url": "https://github.com/ZigaoWang/daztab/",
   "icons": {

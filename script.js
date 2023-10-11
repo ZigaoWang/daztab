@@ -356,6 +356,19 @@ notesClose.addEventListener('click', () => {
   notesPopup.style.display = 'none';
 });
 
+const settingsButton = document.getElementById('settings-button');
+const settingsPopup = document.getElementById('settings-popup');
+const settingsClose = document.getElementById('settings-close');
+
+settingsButton.addEventListener('click', () => {
+  settingsPopup.classList.add('fadeIn');
+  settingsPopup.style.display = 'flex';
+});
+
+settingsClose.addEventListener('click', () => {
+  settingsPopup.style.display = 'none';
+});
+
 var myDate = new Date();
     var hrs = myDate.getHours();
 
@@ -398,3 +411,74 @@ updateOnlineTime();
 
 // Update the time every second
 setInterval(updateOnlineTime, 1000);
+
+// Get elements from the HTML
+const userPhotoElement = document.getElementById("user-photo");
+const photoUploadElement = document.getElementById("photo-upload");
+
+// Check if there is a previously uploaded photo in local storage
+const storedPhoto = localStorage.getItem("userPhoto");
+
+// If a photo is found in local storage, display it
+if (storedPhoto) {
+  userPhotoElement.src = storedPhoto;
+}
+
+// Add an event listener to the upload button
+photoUploadElement.addEventListener("change", function () {
+  const file = photoUploadElement.files[0];
+  if (file) {
+    // Read the uploaded image and set it as the user photo
+    const reader = new FileReader();
+    reader.onload = function (event) {
+      const imageUrl = event.target.result;
+      userPhotoElement.src = imageUrl;
+
+      // Store the image in local storage
+      localStorage.setItem("userPhoto", imageUrl);
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+// Add an event listener to the delete button
+document.getElementById("delete-photo").addEventListener("click", function () {
+  // Clear the user photo and remove it from local storage
+  userPhotoElement.src = "user.png";
+  localStorage.removeItem("userPhoto");
+  photoUploadElement.value = ""; // Clear the file input
+});
+
+// Add an event listener to the "Choose File" button
+document.getElementById("choose-file").addEventListener("click", function () {
+  // Trigger the file input when the button is clicked
+  document.getElementById("photo-upload").click();
+});
+
+// Get elements from the HTML
+const setNameButton = document.getElementById("set-name");
+const userName = document.getElementById("user-name");
+
+// Try to retrieve the user's name from local storage
+const cachedName = localStorage.getItem("userName");
+
+// If a cached name is found, display it
+if (cachedName) {
+  userName.textContent = cachedName;
+  userName.style.display = "block";
+}
+
+// Add event listener to the "Set Name" button
+setNameButton.addEventListener("click", function () {
+  // Use window.prompt to capture the user's name
+  const name = window.prompt("Please enter your name:");
+
+  if (name) {
+    // Display the user's name underneath the profile picture
+    userName.textContent = name;
+    userName.style.display = "block";
+    
+    // Store the user's name in local storage
+    localStorage.setItem("userName", name);
+  }
+});

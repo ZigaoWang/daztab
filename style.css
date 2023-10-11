@@ -36,7 +36,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.45);
   z-index: 1;
   animation: fadeIn 1s ease-in-out;
 }
@@ -88,6 +88,16 @@ body {
   text-align: center;
 }
 
+#user-name {
+  position: relative;
+  font-size: 2vh;
+  margin-top: 1vh;
+  color: white;
+  text-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  text-align: center;
+}
+
 #bottom-container {
   bottom: 2.5vh;
   position: absolute;
@@ -133,9 +143,10 @@ body {
   cursor: pointer;
   padding: 2px;
   transition: background-color 0.3s ease-in-out;
-  margin-right: 0.8vh;
-  width: 4vh;
-  height: 4vh;
+  margin-right: 0.4vh;
+  margin-left: 0.4vh;
+  width: 3.8vh;
+  height: 3.8vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,4 +303,81 @@ td a {
 
 td a:hover {
   text-decoration: underline;
+}
+
+/* Style the profile photo section */
+#profile-photo {
+  position: absolute;
+  bottom: 11vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Style the avatar container */
+.avatar-container {
+  width: 8vh;
+  height: 8vh;
+  background-color: #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Style the user profile photo */
+#user-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the Upload Background button */
+#upload-button, #delete-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+#upload-button:hover, #delete-button:hover {
+  background-color: #cf0000;
+}
+
+#upload-button:active, #delete-button:active {
+  background-color: #a20000;
+}
+
+/* Style the Choose Avatar Photo button */
+#choose-file, #delete-photo, #set-name {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+}
+
+#choose-file:hover, #delete-photo:hover, #set-name:hover {
+  background-color: #0056b3;
+}
+
+#choose-file:active, #delete-photo:active, #set-name:active {
+  background-color: #003981;
 }

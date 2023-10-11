@@ -24,14 +24,15 @@
     <div id="clock"></div>
     <div id="greet"></div>
   </div>
+      <!-- User Profile Photo Area -->
+<div id="profile-photo">
+  <div class="avatar-container">
+    <img id="user-photo" src="image/user.png" alt="User Photo">
+  </div>
+  <div id="user-name"></div>
+</div>
   <div id="bottom-container">
     <div id="button-container">
-      <button title="Upload Background" id="upload-button" class="button">
-        <img src="image/upload.png" alt="Upload Background" class="button-icon">
-      </button>
-      <button title="Delete Background" id="delete-button" class="button">
-        <img src="image/delete.png" alt="Delete Background" class="button-icon">
-      </button>
       <button title="About" id="about-button" class="button">
         <img src="image/about.png" alt="About" class="button-icon">
       </button>
@@ -44,7 +45,9 @@
       <button title="Web Notes" id="notes-button" class="button">
         <img src="image/notes.png" alt="Notes" class="button-icon">
       </button>
-      <input type="file" id="image-upload" accept="image/*">
+      <button class="button" id="settings-button">
+        <img src="image/settings.png" alt="Settings" class="button-icon">
+      </button>
     </div>
     <div id="quote"></div>
   </div>
@@ -113,6 +116,29 @@
     <div class="popup-content">
       <button title="Close" id="notes-close" class="popup-close-button">&#x2715</button>
       <iframe id="notes-iframe" src="app/notes/index.html" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div id="settings-popup" class="popup">
+    <div class="popup-content">
+      <button title="Upload Background" id="upload-button">
+        <p>Upload Background</p>
+      </button>
+      <button title="Delete Background" id="delete-button">
+        <p>Delete Background</p>
+      </button>
+      
+    <button id="choose-file">
+      <p>Choose Avatar Photo</p>
+    </button>
+    <button id="delete-photo">
+      <p>Delete Avatar Photo</p>
+    </button>
+    <button id="set-name">
+      <p>Set Name</p>
+    </button>
+      <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+      <input type="file" id="image-upload" accept="image/*">
+      <button title="Close" id="settings-close" class="popup-close-button">&#x2715</button>
     </div>
   </div>
   <script src="script.js"></script>

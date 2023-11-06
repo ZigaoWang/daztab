@@ -1,7 +1,7 @@
 body {
   margin: 0;
   position: relative;
-  background-image: url(https://bing.shangzhenyang.com/api/1080p);
+  background-image: url(https://api.zigao.wang/bing-wallpaper);
   display: flex;
   align-items: center;
   justify-content: center;

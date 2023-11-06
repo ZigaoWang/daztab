@@ -285,7 +285,7 @@ uploadButton.addEventListener('click', () => {
 });
 
 deleteButton.addEventListener('click', () => {
-  backgroundContainer.style.backgroundImage = 'url(https://bing.shangzhenyang.com/api/1080p)';
+  backgroundContainer.style.backgroundImage = 'url(https://api.zigao.wang/bing-wallpaper)';
   localStorage.removeItem('backgroundImage');
 });
 
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (cachedBackgroundImage) {
     backgroundContainer.style.backgroundImage = `url('${cachedBackgroundImage}')`;
   } else {
-    backgroundContainer.style.backgroundImage = 'url(https://bing.shangzhenyang.com/api/1080p)';
+    backgroundContainer.style.backgroundImage = 'url(https://api.zigao.wang/bing-wallpaper)';
   }
 
   updateClock();

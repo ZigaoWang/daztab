@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Calculator</title>
-  <meta name="description" content="Simple Calculator With Dark Mode." />
+  <title>Professional Calculator</title>
+  <meta name="description" content="Professional Calculator With Dark Mode." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="assets/calculator.ico">
   <link rel="stylesheet" href="styles/dark.css" id="theme" />
@@ -19,7 +19,6 @@
   <div class="wrapper">
     <div class="container">
       <div class="header-container">
-        <!-- This heading also notifies about the theme change.-->
         <h1 id="toast">Calculator</h1>
         <div class="top-buttons">
           <button type="button" id="changeTheme" class="theme-button">
@@ -32,28 +31,28 @@
         <input type="button" value="C" id="clear-button" />
       </div>
       <div class="second-row">
-        <input type="button" class="number" value="1" />
-        <input type="button" class="number" value="2" />
-        <input type="button" class="number" value="3" />
-        <input type="button" class="operator" value="+" />
+        <input type="button" class="function" value="^2" />
+        <input type="button" class="function" value="^3" />
+        <input type="button" class="operator" value="/" />
+        <input type="button" id="equals" value="=" />
       </div>
       <div class="third-row">
-        <input type="button" class="number" value="4" />
-        <input type="button" class="number" value="5" />
-        <input type="button" class="number" value="6" />
-        <input type="button" class="operator" value="-" />
-      </div>
-      <div class="fourth-row">
         <input type="button" class="number" value="7" />
         <input type="button" class="number" value="8" />
         <input type="button" class="number" value="9" />
         <input type="button" class="operator" value="*" />
       </div>
+      <div class="fourth-row">
+        <input type="button" class="number" value="4" />
+        <input type="button" class="number" value="5" />
+        <input type="button" class="number" value="6" />
+        <input type="button" class="operator" value="-" />
+      </div>
       <div class="fifth-row">
-        <input type="button" class="operator" value="/" />
-        <input type="button" class="number" value="0" />
-        <input type="button" class="number" value="." />
-        <input type="button" id="equals" value="=" />
+        <input type="button" class="number" value="1" />
+        <input type="button" class="number" value="2" />
+        <input type="button" class="number" value="3" />
+        <input type="button" class="operator" value="+" />
       </div>
     </div>
   </div>

@@ -482,3 +482,70 @@ setNameButton.addEventListener("click", function () {
     localStorage.setItem("userName", name);
   }
 });
+
+// Function to set background from uploaded file
+function setBackgroundFromFile(file) {
+  const reader = new FileReader();
+  reader.onload = function (e) {
+    localStorage.setItem('background', e.target.result); // Save to local storage
+    updateBackground();
+  };
+  reader.readAsDataURL(file);
+  localStorage.removeItem('backgroundURL'); // Remove URL if set
+}
+
+// Function to set background from URL
+function setBackgroundFromURL(url) {
+  localStorage.setItem('backgroundURL', url); // Save URL to local storage
+  updateBackground();
+  localStorage.removeItem('background'); // Remove uploaded image if set
+}
+
+// Update the background based on saved data
+function updateBackground() {
+  const savedImage = localStorage.getItem('background');
+  const savedURL = localStorage.getItem('backgroundURL');
+
+  if (savedImage) {
+    document.body.style.backgroundImage = `url('${savedImage}')`;
+  } else if (savedURL) {
+    document.body.style.backgroundImage = `url('${savedURL}')`;
+  } else {
+    document.body.style.backgroundImage = 'none'; // Default or no background
+  }
+}
+
+// Event listener for the set background button
+document.getElementById('set-background').addEventListener('click', function() {
+  const fileInput = document.getElementById('image-upload');
+  const urlInput = document.getElementById('image-url');
+
+  if (fileInput.files && fileInput.files[0]) {
+    setBackgroundFromFile(fileInput.files[0]);
+  } else if (urlInput.value) {
+    setBackgroundFromURL(urlInput.value);
+  }
+});
+
+// Event listener for the delete background button
+document.getElementById('delete-button').addEventListener('click', function() {
+  localStorage.removeItem('background');
+  localStorage.removeItem('backgroundURL');
+  updateBackground();
+});
+
+// Load the background on startup
+document.addEventListener('DOMContentLoaded', updateBackground);
+
+// Avatar and name settings logic (placeholder, implement as needed)
+document.getElementById('choose-file').addEventListener('click', function() {
+  // Logic for choosing avatar photo
+});
+
+document.getElementById('delete-photo').addEventListener('click', function() {
+  // Logic for deleting avatar photo
+});
+
+document.getElementById('set-name').addEventListener('click', function() {
+  // Logic for setting user name
+});

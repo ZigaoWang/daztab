@@ -382,3 +382,17 @@ td a:hover {
 #choose-file:active, #delete-photo:active, #set-name:active {
   background-color: #003981;
 }
+
+#image-url {
+  margin-bottom: 10px;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+#set-background {
+  padding: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}

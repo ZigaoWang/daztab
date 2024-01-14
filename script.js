@@ -511,7 +511,7 @@ function updateBackground() {
   } else if (savedURL) {
     document.body.style.backgroundImage = `url('${savedURL}')`;
   } else {
-    document.body.style.backgroundImage = 'none'; // Default or no background
+    document.body.style.backgroundImage = 'none';
   }
 }
 

@@ -16,6 +16,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   overflow: hidden;
+  background-size: cover;
 }
 
 #background-container {

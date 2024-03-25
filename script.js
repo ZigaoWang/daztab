@@ -197,7 +197,6 @@ const quotes = [
   "Life is what you make it.",
   "Choose happiness.",
   "Live more, worry less.",
-  "Be present.",
   "Keep your chin up.",
   "Adventure awaits.",
   "Stay humble, hustle hard.",

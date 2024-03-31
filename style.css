@@ -7,7 +7,7 @@ body {
   justify-content: center;
   height: 100vh;
   flex-direction: column;
-  font-family: url(fonts/SFProDisplay-Regular.woff), 'SF Pro Display', 'SF Pro', 'Quicksand', 'Roboto', sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro', 'Helvetica', sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

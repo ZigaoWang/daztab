@@ -29,4 +29,4 @@ DazTab is released under the MIT License. Please see the [LICENSE](/LICENSE) fil
 
 ## Privacy Policy
 
-DazTab do not collect any personal information, and we do not use cookies. For more information, please click [here](https://old.daztab.com/privacy.html) to see the privacy policy.
+DazTab do not collect any personal information, and we do not use cookies. For more information, please click [here](https://zigao.wang/privacy.html) to see the privacy policy.
